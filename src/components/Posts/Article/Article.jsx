@@ -1,5 +1,5 @@
 import React from 'react'
-import Author from './Author'
+import Author from '../Author/Author'
 
 const Article = ({ title, subtitle, paragraph }) => {
 

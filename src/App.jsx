@@ -1,9 +1,9 @@
 import "./App.css";
-import Products from "./components/Products";
+import { ProductsContainer } from "./components/Products";
 // import Article from "./components/Article";
 
 function App(props) {
-  return <Products />;
+  return <ProductsContainer />;
 }
 
 export default App;
