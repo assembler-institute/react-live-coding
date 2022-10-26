@@ -9,12 +9,12 @@ const Products = () => {
   return (
     <>
       <h1>ZapaTeando</h1>
-      <CounterApp />
       {products.map((product) => (
         <ProductCard key={product.id}>
           <div>{product.title}</div>
           <div>{product.price}</div>
           <img className="product__img" src={product.img} alt={product.title} />
+          <CounterApp />
         </ProductCard>
       ))}
     </>
