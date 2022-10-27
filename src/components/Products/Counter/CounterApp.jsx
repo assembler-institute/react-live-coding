@@ -5,12 +5,12 @@ const CounterApp = ({ initialValue = 0 }) => {
   const [counter, setCounter] = useState(initialValue);
 
   const increaseValue = () => {
-    setCounter(counter + 1);
+    setCounter((prevState) => prevState + 1);
   };
 
   const substractValue = () => {
     if (counter === 0) return initialValue;
-    else setCounter(counter - 1);
+    else setCounter((prevState) => prevState - 1);
   };
 
   const resetValue = () => {

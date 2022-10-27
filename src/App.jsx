@@ -1,9 +1,14 @@
 import "./App.css";
+import AssignId from "./components/AssignId/AssignId";
 import { ProductsContainer } from "./components/Products";
-// import Article from "./components/Article";
 
-function App(props) {
-  return <ProductsContainer />;
+function App() {
+  return (
+    <>
+      <AssignId />
+      <ProductsContainer />
+    </>
+  );
 }
 
 export default App;
