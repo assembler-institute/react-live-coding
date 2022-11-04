@@ -1,9 +1,19 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { ProductsContainer } from "./components/Products";
-// import Article from "./components/Article";
+import UserProvider from "./components/context/UserProvider";
+import NavBar from "./components/NavBar/NavBar";
+import Router from "./routes/Router";
 
-function App(props) {
-  return <ProductsContainer />;
+function App() {
+  return (
+    <>
+      <UserProvider>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>  
+      </UserProvider>
+    </>
+  );
 }
 
 export default App;
