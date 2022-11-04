@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../components/context/UserContext";
+import { UserContext } from "../context/UserContext";
 import NavBar from "../components/NavBar/NavBar";
 import { ProductsContainer } from "../components/Products";
 

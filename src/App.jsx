@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import UserProvider from "./components/context/UserProvider";
+import UserProvider from "./context/UserProvider";
 import NavBar from "./components/NavBar/NavBar";
 import Router from "./routes/Router";
 
@@ -10,7 +10,7 @@ function App() {
       <UserProvider>
         <BrowserRouter>
           <Router />
-        </BrowserRouter>  
+        </BrowserRouter>
       </UserProvider>
     </>
   );

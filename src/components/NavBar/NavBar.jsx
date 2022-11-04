@@ -1,6 +1,6 @@
 import { memo, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { UserContext } from "../context/UserContext";
+import { UserContext } from "../../context/UserContext";
 
 const NavBar = () => {
   const { user, setUser } = useContext(UserContext);
