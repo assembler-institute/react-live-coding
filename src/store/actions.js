@@ -36,14 +36,14 @@ const initialArg = [
   }
 ]
 
-const booksReducer = (initialState, action) => {
+const booksReducer = (state, action) => {
   switch (action.type) {
     case 'add_book':
-      return [...initialState, action.payload]
+      return [...state, action.payload]
     case "delete_book":
-      return initialState.filter(book => book.id !== action.payload)
+      return state.filter(book => book.id !== action.payload)
     default:
-      return initialState;
+      return state;
   }
 }
 
