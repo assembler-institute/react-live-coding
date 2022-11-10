@@ -1,5 +1,7 @@
-import BookReducer from "./store/BookReducer";
+import BooksList from "./BooksList"
+import Form from "./Form"
 
 export {
-  BookReducer
+  BooksList,
+  Form
 }

@@ -1,8 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
-import { useReducer } from "react";
-import BooksList from "../BooksList";
-import Form from "../Form";
+import { useEffect, useReducer } from "react";
+import { Form, BooksList } from "../components";
 import { initialArg, booksReducer } from "./actions";
 
 const init = () => {

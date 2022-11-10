@@ -1,5 +1,3 @@
-import React from "react";
-
 const BooksList = ({ initialArg, onDeleteBook }) => {
   return (
     <>

@@ -1,6 +1,5 @@
-
 import './App.css';
-import { BookReducer } from './components';
+import { BookReducer } from './store';
 
 function App() {
 
