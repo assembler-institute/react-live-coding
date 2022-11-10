@@ -1,16 +1,12 @@
-import { UseRef_1, UseRef_2, FormInput } from './components';
 
 import './App.css';
+import { BookReducer } from './components';
 
 function App() {
 
   return (
     <>
-      <h2>🧐 Quien tiene la voluntad tiene la fuerza - Menandro</h2>
-      <hr />
-      <UseRef_1 />
-      <UseRef_2 />
-      <FormInput />
+      <BookReducer />
     </>
   )
 }
