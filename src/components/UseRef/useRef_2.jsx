@@ -11,8 +11,8 @@ const useRef_2 = ({ initialValue = 0 }) => {
   useEffect(() => {
     renderedRef.current = counter;
     setTimeout(() => {
-      console.log(`useState value ${counter}`);
-      console.log(`useRef value ${renderedRef.current}`);
+      // console.log(`useState value ${counter}`);
+      // console.log(`useRef value ${renderedRef.current}`);
     }, 2000);
   }, [counter]);
 
