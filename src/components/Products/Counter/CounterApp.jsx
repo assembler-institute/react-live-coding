@@ -1,40 +1,31 @@
-import { useState } from "react";
+import useCounter from "../../../hooks/useCounter";
 import "./counterstyles.css";
 
 const CounterApp = ({ initialValue = 0 }) => {
-  const [counter, setCounter] = useState(initialValue);
-
-  const increaseValue = () => {
-    setCounter(counter + 1);
-  };
-
-  const substractValue = () => {
-    if (counter === 0) return initialValue;
-    else setCounter(counter - 1);
-  };
-
-  const resetValue = () => {
-    setCounter((initialValue = 0));
-  };
+  const { counter, increaseValue, substractValue, resetValue } =
+    useCounter(initialValue);
 
   return (
     <>
       <div>{counter}</div>
-      <button className="btn-counter btn-counter__add" onClick={increaseValue}>
+      <button
+        className="btn-counter btn-counter__add"
+        onClick={() => increaseValue(5)}
+      >
         +
       </button>
-      <button className="btn-counter btn-counter__reset" onClick={resetValue}>
+      <button
+        className="btn-counter btn-counter__reset"
+        onClick={() => resetValue(10)}
+      >
         C
       </button>
       <button
         className="btn-counter btn-counter__substract"
-        onClick={substractValue}
+        onClick={() => substractValue(2)}
       >
         -
       </button>
-      {/* <button disabled={counter <= 0} onClick={substractValue}>
-        -
-      </button> */}
     </>
   );
 };
