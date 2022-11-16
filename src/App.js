@@ -1,13 +1,13 @@
+
 import './App.css';
-import { BookReducer } from './store';
+import AppRoutes from './routes/AppRouter';
 
 function App() {
-
   return (
-    <>
-      <BookReducer />
-    </>
-  )
+    <div className="App">
+      <AppRoutes />
+    </div>
+  );
 }
 
 export default App;

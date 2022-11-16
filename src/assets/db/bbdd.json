@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"Taladro",
+        "type":"Perforador"
+    },
+    {
+        "id":2,
+        "name":"Martillo",
+        "type":"Combinado"
+    },
+    {
+        "id":3,
+        "name":"Radial",
+        "type":"Metal"
+    }
+]
