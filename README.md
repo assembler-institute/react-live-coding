@@ -73,4 +73,4 @@ This code was developed by
 ## 🔗 Authors
 | Contributor | Github profile
 | ------------------------| -----------------------------------------------------------------------|
-| [![](https://avatars2.githubusercontent.com/u/12766483?s=90&v=4)](https://github.com/BalaguerDev) | [@BalaguerDev](https://github.com/BalaguerDev) |
+| [![](https://avatars2.githubusercontent.com/u/101297683?s=90&v=4)](https://github.com/BalaguerDev) | [@BalaguerDev](https://github.com/BalaguerDev) |
