@@ -1,13 +1,20 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import { connect } from "react-redux";
 
-const Footer = () => {
-  const counter = useSelector((state) => state.counter);
+function Footer({ counter }) {
   return (
     <>
-      <footer>{counter}</footer>
+      <p>Footer</p>
+      <div>Counter: {counter}</div>
     </>
   );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    counter: state.counter,
+  };
 };
 
-export default Footer;
+const reduxHOC = connect(mapStateToProps, null);
+
+export default reduxHOC(Footer);
