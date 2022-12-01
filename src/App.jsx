@@ -1,19 +1,20 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import "./App.css";
-import Provider from "./redux/Provider";
+import Header from "./ui/Header/Header";
 
-function App() {
-  // const [counter, setCounter] = useState(0);
+let renderedCount = 0;
+export const App = () => {
+
+  renderedCount++;
 
   return (
     <>
-      <Provider>
-        <Header />
-        <Footer />
-      </Provider>
+      <Header renderedCount={renderedCount}/>
+      <h1>Login</h1>
+      <form>
+        <input name='firstName' placeholder="First name" />
+        <input name='hobbies' placeholder="i.e. coding every day 🤩" />
+        <input name='favourite series' placeholder="Breaking bad" />
+        <button type="submit">Submit</button>
+      </form>
     </>
   );
 }
-
-export default App;
